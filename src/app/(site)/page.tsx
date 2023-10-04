@@ -7,7 +7,7 @@ import MainLayouts from "./layouts/MainLayouts";
 export default function Home() {
   const [changeState, setChangeState] = useState<boolean>(true);
 
-  const handleChangeState = (value: any) => {
+  const handleChangeState = (value: boolean) => {
     return setChangeState(value);
   };
   usePreventZoom();
@@ -17,7 +17,7 @@ export default function Home() {
         handleChangeState={handleChangeState}
         changeState={changeState}
       >
-        <Hero />
+        <Hero changeState={changeState} />
         <Subject changeState={changeState} />
       </MainLayouts>
     </div>

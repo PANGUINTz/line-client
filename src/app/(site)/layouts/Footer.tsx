@@ -2,22 +2,19 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-700 py-5 text-white">
+    <div className="bg-gray-700 p-5 text-white">
       <div className="container mx-auto">
-        <div className="grid grid-cols-3 md:gap-28 lg:gap-36 max-sm:grid-cols-1 max-md:text-center">
+        <div className="grid grid-cols-3 md:gap-28 lg:gap-36 max-md:gap-12 max-sm:grid-cols-1 max-md:text-center">
           <div>
             <h4>Quick Links</h4>
-            <div className="grid grid-cols-2 list-none my-2 font-light">
-              <div>
-                <li>สมัครเรียน</li>
-                <li>เกี่ยวกับคณะ</li>
-                <li>หลักสูตร</li>
-              </div>
-              <div>
-                <li>อบรมและบริการ</li>
-                <li>ศิษย์เก่า</li>
-                <li>ศิษย์ปัจจุบัน</li>
-              </div>
+            <div className="grid grid-cols-2 max-md:grid-cols-3 gap-1 list-none my-2 font-light">
+              <li>สมัครเรียน</li>
+              <li>เกี่ยวกับคณะ</li>
+              <li>หลักสูตร</li>
+
+              <li>อบรมและบริการ</li>
+              <li>ศิษย์เก่า</li>
+              <li>ศิษย์ปัจจุบัน</li>
             </div>
           </div>
           <div>
