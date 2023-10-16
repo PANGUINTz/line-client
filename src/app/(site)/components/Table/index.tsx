@@ -15,7 +15,7 @@ const index = ({ changeState }: any) => {
       label: "รหัสวิชา-ชื่อวิชา",
     },
     {
-      key: "countUnit",
+      key: "countCourseN",
       label: "หน่วยกิต",
     },
     {
@@ -23,7 +23,7 @@ const index = ({ changeState }: any) => {
       label: "รหัสวิชา-ชื่อวิชา (วิชาที่เทียบหน่วยกิตได้)",
     },
     {
-      key: "countUnit",
+      key: "countNCourseN",
       label: "หน่วยกิต",
     },
   ];
@@ -88,34 +88,4 @@ const index = ({ changeState }: any) => {
   );
 };
 
-// {changeState && (
-//   <table className="bg-green-700 text-white w-full text-left">
-//     <tbody>
-//       <tr>
-//         <th className="p-5">รหัสวิชา-ชื่อวิชา</th>
-//         <th className="p-5 text-center">หน่วยกิต</th>
-//         <th className="p-5">
-//           {" "}
-//           รหัสวิชา-ชื่อวิชา (วิชาที่เทียบหน่วยกิตได้)
-//         </th>
-//         <th className="p-5 text-center">หน่วยกิต</th>
-//       </tr>
-//       {datas[0].Accept.map((data, k) => (
-//         <tr
-//           className="border-b border-gray-500 bg-white text-black"
-//           key={k}
-//         >
-//           <td className="p-5">
-//             {data?.Course_C} {data?.Course_N}
-//           </td>
-//           <td className="p-5 text-center">3</td>
-//           <td className="p-5">
-//             {data?.NCourse_C} {data?.NCourse_N}
-//           </td>
-//           <td className="p-5 text-center">3</td>
-//         </tr>
-//       ))}
-//     </tbody>
-//   </table>
-// )}
 export default index;

@@ -1,8 +1,12 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import HeroImage from "../../../../assets/images/hero_image.png";
 
 const index = ({ changeState }: any) => {
+  const [formData, setFormData] = useState("");
+  console.log(formData);
+
   return (
     <div className="relative">
       <Image
@@ -28,6 +32,7 @@ const index = ({ changeState }: any) => {
                 type="text"
                 className="w-full my-2 mr-3 p-2 rounded border border-gray-400 "
                 placeholder="ตัวอย่างการกรอกรหัสวิชา 30000-1200 , 30000-1201"
+                onChange={(e) => setFormData(e.target.value)}
               />
               <button className="bg-green-500 py-2 px-5 text-white hover:bg-green-900 duration-300 rounded-lg h-fit mt-2">
                 ยืนยัน

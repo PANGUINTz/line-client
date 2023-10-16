@@ -9,7 +9,6 @@ import Logo from "../../../assets/images/logo_utcc.png";
 const Header = ({ handleChange, changeState }: any) => {
   const [isOpen, setOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(0);
-  console.log(handleChange, "Headers");
 
   useEffect(() => {
     const handleWindowResize = () => {
